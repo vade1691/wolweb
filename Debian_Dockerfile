@@ -8,7 +8,7 @@ RUN mkdir /wolweb
 WORKDIR /wolweb
 
 # Install Dependecies
-RUN git clone https://github.com/sameerdhoot/wolweb . && \
+RUN git clone https://github.com/vade1691/wolweb . && \
     go mod tidy && \
     go mod download
 
