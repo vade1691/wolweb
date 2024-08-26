@@ -2,7 +2,7 @@ version: "3"
 services:
   wolweb:
     container_name: wolweb
-    image: "ghcr.io/vade1691/wolweb:latest"
+    image: "ghcr.io/vade1691/wolweb"
     restart: always
     
     # Make sure that the file exists in local directory from where you are running the compose file;
