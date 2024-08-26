@@ -43,7 +43,7 @@ func wakeUpWithDeviceName(w http.ResponseWriter, r *http.Request) {
 				} else {
 					// Horray we send the WOL Packet succesfully
 					result.Success = true
-					result.Message = fmt.Sprintf("Sent magic packet to device '%s' with MAC '%s' on Broadcast IP '%s'.", c.Name, c.Mac, c.BroadcastIP)
+					result.Message = fmt.Sprintf("Sent magic packet to device") //'%s' with MAC '%s' on Broadcast IP '%s'.", c.Name, c.Mac, c.BroadcastIP)
 					result.ErrorObject = nil
 				}
 			}
