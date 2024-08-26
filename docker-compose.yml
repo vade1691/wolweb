@@ -2,7 +2,7 @@ version: "3"
 services:
   wolweb:
     container_name: wolweb
-    image: "ghcr.io/vade1691/wolweb"
+    image: "ghcr.io/vade1691/wolweb:latest"
     restart: always
     
     # Make sure that the file exists in local directory from where you are running the compose file;
@@ -20,5 +20,5 @@ services:
     environment:
       WOLWEBHOST: "0.0.0.0"
       WOLWEBPORT: "8089"
-      #WOLWEBVDIR: "/wolweb"
+      WOLWEBVDIR: ""
       WOLWEBBCASTIP: "192.168.1.255:9"
